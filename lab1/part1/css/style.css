@@ -21,3 +21,10 @@ h2 {
     padding-left: 40px;
     margin-top: -20px;
 }
+
+/* Adding a class for the subtitles in the exotic dance moves
+* primarily to remove the indentation
+*/
+.subtitle {
+    margin-top: -20px;
+}
