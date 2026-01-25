@@ -15,3 +15,9 @@ h1 {
 h2 {
   font-size: 1.3em;
 }
+/* added text padding to align text without introducing a gap*/
+/* had to add a negative top margin to remove gap between text*/
+.indented-text {
+    padding-left: 40px;
+    margin-top: -20px;
+}
