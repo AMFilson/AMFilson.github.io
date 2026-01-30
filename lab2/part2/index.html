@@ -4,12 +4,14 @@
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width" >
     <title>Planet data table</title>
+    <!-- links to external css sheet.
+     start with period to get current folder ./ -->
     <link href="./css/style.css" rel="stylesheet" type="text/css" >
     <!--
     Name:index.html
     Author: Andrew Filson (Adu Poku)
     Date: Jan 25th 2026
-    Desc: A big table full of planet data
+    Desc: A big table full of planetary data 
     -->
   </head>
   <body>
@@ -20,26 +22,31 @@
         <colgroup>
             <!-- Must include the colspan = 2 so I can target subsequent columns -->
             <col span="2">
+            <!-- Remember class refers to self produced object types
+             These objects carry attributes or methods of parent type
+             in this case style is applied via css file
+             column border just a descriptive naming structure -->
             <col class="column-border">
             <!-- Must include colspan = 9 else validator will state I have exceeded my specified columns and rows -->
             <col span="9">
+            
         </colgroup>
 
         <tr>
             <td colspan="2"> </td>
-            <th>Name</th>
+            <th scope="col">Name</th>
             <!-- set the scope of each header
              by defining whether the header serves as a row header,
              column header, or a header which nests contains >1 subheaders -->
-            <th scope="row"> Mass (10<sup>24</sup>kg)</th>
-            <th>Diameter (km)</th>
-            <th>Density (kg/m<sup>3</sup>)</th>
-            <th>Gravity (m/s<sup>2</sup>)</th>
-            <th>Length of Day (hours)</th>
-            <th>Distance from Sun (10<sup>6</sup>km)</th>
-            <th>Mean temperature (°C)</th>
-            <th>Number of moons</th>
-            <th>Notes</th>
+            <th scope="col"> Mass (10<sup>24</sup>kg)</th>
+            <th scope="col">Diameter (km)</th>
+            <th scope="col">Density (kg/m<sup>3</sup>)</th>
+            <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+            <th scope="col">Length of Day (hours)</th>
+            <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+            <th scope="col">Mean temperature (°C)</th>
+            <th scope="col">Number of moons</th>
+            <th scope="col">Notes</th>
         </tr>    
         <tr>
             <th colspan="2" rowspan="4" scope="rowgroup">Terrestrial planets</th>
@@ -48,7 +55,8 @@
             <td>4,879</td>
             <td>5427</td>
             <td>3.7</td>
-            <td>4222.6</td>
+            <!-- Experimenting with the style -->
+            <td style="background-color: rgba(0, 255, 255, 0.233);">4222.6</td>
             <td>57.9</td>
             <td>167</td>
             <td>0</td>
@@ -67,7 +75,8 @@
             <td></td>
         </tr>
         <tr>
-            <th scope="row">Earth</th>
+            <!-- For now inline styles make the most sense for individual items -->
+            <th scope="row" style="color: rgb(104, 161, 104);"">Earth</th>
             <td>5.97</td>
             <td>12,756</td>
             <td>5514</td>
