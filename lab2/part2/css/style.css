@@ -47,6 +47,6 @@ caption {
 
 /* Playing with the style of individual items or rows
 How can I effectively do this with 100's or thousands of children? */
-tr:nth-child(4) td {
+tr:nth-child(3) td {
   background-color: rgba(40, 151, 64, 0.493);
 }
