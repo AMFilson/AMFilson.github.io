@@ -1,0 +1,12 @@
+/* Style sheet for lab3 part 1
+Andrew Filson
+Feb 27th 2026
+ */
+
+html {
+  background-color: white;
+}
+
+body {
+  font: 1.2em / 1.5 system-ui;
+}
