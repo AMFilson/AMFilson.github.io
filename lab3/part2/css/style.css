@@ -7,12 +7,23 @@ Feb 27th 2026
 * {
   box-sizing: border-box;
 }
+html{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 body {
-  margin: 0 auto;
-  padding: 0 20px;
+  font-family: 'lucida Sans';
   min-width: 980px;
   max-width: 1400px;
+}
+
+h1 {
+  font-family: 'Lucida Sans Unicode';
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Lucida Grande';
 }
 
 /* Layout */
