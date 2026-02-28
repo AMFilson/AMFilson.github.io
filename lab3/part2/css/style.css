@@ -21,8 +21,8 @@ body {
 
 h1 {
   font-family: 'Lucida Sans Unicode';
-  font-weight: bold;
-  font-size: 33px;
+  font-weight:bold;
+  font-size: 40px;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -54,10 +54,42 @@ a:visited {
 a[href*="https"] {
   background: url("../images/external-link-52.png") right no-repeat;
   background-size: 10px 10px;
-  
+  padding-right: 15px;
   
 }
 
+li {
+  line-height: 2;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style: circle;
+}
+
+p {
+  line-height: 2;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* This is the proper way to indent your text
+in the first paragraph no need for inline modifications
+this lets us know its the first paragraph under the section and h2 subset */
+section h2 + p {
+  text-indent: 2rem;
+}
+
+nav li {
+  font-family: 'Verdana';
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  width: 150%;
+  line-height: 3;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px dotted #aa6666;
+}
 /* Layout */
 
 main {
