@@ -15,12 +15,12 @@ body {
   min-width: 980px;
   max-width: 1400px;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.6;
   letter-spacing: 0.3px;
 }
 
 h1 {
-  font-family: 'Lucida Sans Unicode';
+  font-family: 'Lucida Sans Unicode'sans-serif;
   font-weight:bold;
   font-size: 40px;
   text-align: center;
@@ -28,8 +28,9 @@ h1 {
 }
 
 h2 {
-  font-family:'Verdana';
+  font-family:'Verdana', sans-serif;
   font-style:italic;
+  font-weight:bold;
   font-size: 24px;
   margin-bottom: 0%;
   letter-spacing: 1px;
@@ -73,7 +74,7 @@ p {
 
 /* This is the proper way to indent your text
 in the first paragraph no need for inline modifications
-this lets us know its the first paragraph under the section and h2 subset */
+this lets us know its the first paragraph under the section and h2 selector */
 section h2 + p {
   text-indent: 2rem;
 }
