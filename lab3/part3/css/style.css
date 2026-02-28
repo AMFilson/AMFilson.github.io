@@ -32,6 +32,7 @@ img {
 .grid {
   margin: 0 auto;
   max-width: 980px;
+  grid;
 }
 
 nav {
@@ -40,12 +41,20 @@ nav {
 }
 
 nav ul {
+  display: flex;
+  /* flex direction is pretty sweet */
+  /* flex-direction: row-reverse; */
+  flex-flow: nowrap;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
+  z-index: 1000;
+  
 }
 
 nav a {
+ 
   color: white;
   text-decoration: none;
   padding: 0.5em 1em;
