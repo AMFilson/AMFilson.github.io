@@ -38,6 +38,7 @@ h2 {
 a {
   color: #aa6666;
   text-decoration: underline;
+  outline: none;
 }
 
 a:hover, a:focus{
@@ -48,6 +49,13 @@ a:hover, a:focus{
 a:visited {
   color: darkred;
   text-decoration:none;
+}
+
+a[href*="https"] {
+  background: url("../images/external-link-52.png") right no-repeat;
+  background-size: 10px 10px;
+  
+  
 }
 
 /* Layout */
