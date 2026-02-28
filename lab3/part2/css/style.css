@@ -7,23 +7,47 @@ Feb 27th 2026
 * {
   box-sizing: border-box;
 }
-html{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+html {
+  font-family: 'Lucida Sans';
 }
-
 body {
-  font-family: 'lucida Sans';
+  font-family: 'Lucida Sans';
   min-width: 980px;
   max-width: 1400px;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.3px;
 }
 
 h1 {
   font-family: 'Lucida Sans Unicode';
   font-weight: bold;
+  font-size: 33px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 h2 {
-  font-family: 'Lucida Grande';
+  font-family:'Verdana';
+  font-style:italic;
+  font-size: 24px;
+  margin-bottom: 0%;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #aa6666;
+  text-decoration: underline;
+}
+
+a:hover, a:focus{
+  color: darkred;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkred;
+  text-decoration:none;
 }
 
 /* Layout */
