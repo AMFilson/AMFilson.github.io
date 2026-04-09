@@ -1,3 +1,10 @@
+/* 
+    Author: Andrew Filson (Adu Poku)
+    Filename: main.js
+    Date: April 9th 2026
+    Desc: The functions and variable definitions for the silly story generator
+*/
+
 // Complete variable definitions and random functions
 
 const customName = document.getElementById("custom-name");
