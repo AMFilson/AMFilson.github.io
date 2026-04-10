@@ -3,7 +3,8 @@
 Andrew Filson
 Feb 27th 2026
  */
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
 * {
   box-sizing: border-box;
 }
@@ -20,8 +21,8 @@ body {
 }
 
 h1 {
-  font-family: 'Lucida Sans Unicode'sans-serif;
-  font-weight:bold;
+  font-family: 'Roboto'sans-serif;
+  font-weight:900;
   font-size: 40px;
   text-align: center;
   letter-spacing: 2px;
