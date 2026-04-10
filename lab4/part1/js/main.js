@@ -28,7 +28,7 @@ function returnRandomStoryString() {
   const randomCharacter = randomValueFromArray(characters)
   const randomPlace = randomValueFromArray(places)
   const randomEvent = randomValueFromArray(events)
-  let storyText = `It was 94 Fahrenheit outside, so :${randomCharacter} went for a walk. When they got to ${randomPlace}, they stared in horror for a few moments, then ${randomEvent}. Bob saw the whole thing, but was not surprised — ${randomCharacter} weighs 300 pounds, and it was a hot day.`
+  let storyText = `It was 94 Fahrenheit outside, so ${randomCharacter} went for a walk. When they got to ${randomPlace}, they stared in horror for a few moments, then ${randomEvent}. Bob saw the whole thing, but was not surprised — ${randomCharacter} weighs 300 pounds, and it was a hot day.`
 
 
   return storyText;
@@ -49,8 +49,8 @@ function generateStory() {
   if (document.getElementById("uk").checked) {
     const weight = `${Math.round(300/14)} Stone`;
     const temperature = `${Math.round((94-32) * (5/9))} Celsius`;
-    newStory = newStory.replace(300, weight)
-    newStory = newStory.replace(94, temperature)
+    newStory = newStory.replace("300 pounds", weight)
+    newStory = newStory.replace("94 Fahrenheit", temperature)
   }
 
   // TODO: replace "" with the correct expression
