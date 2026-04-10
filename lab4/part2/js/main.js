@@ -21,7 +21,7 @@ const images = [{filename: "pic1.jpg", alt: "Closeup of a human eye"},
 const baseURL = "images/";
 
 for (const eachImage of images) {
-
+    /* idk why this wont display as a small carousel */
     const newImageElement = document.createElement("img")
     newImageElement.src = baseURL + eachImage.filename
     newImageElement.alt = eachImage.alt
@@ -31,7 +31,24 @@ for (const eachImage of images) {
     newImageElement.addEventListener("click", updateDisplayedImage)
 }
 
+/* evt represents the object created by an event occuring */
 function updateDisplayedImage(evt) {
     displayedImage.src = evt.target.src
     displayedImage.alt = evt.target.alt
 }
+
+/*Create a click event listener  */
+btn.addEventListener("click",  () => {
+
+    /* get button to switch UI to light mode */
+    if (btn.classList.contains("dark")) {
+        btn.textContent = "Lighten"
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0)" 
+    }
+
+    else {
+        btn.textContent = "Darken"
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0)"
+    }
+    btn.classList.toggle("dark")
+})
