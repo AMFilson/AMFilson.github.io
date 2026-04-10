@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <title>Forms Challenge</title>
     <link href="./css/style.css" rel="stylesheet" type="text/css" >
-    <script defer src="index.js"></script>
 
     <!--
     Author: Andrew Filson (Adu Poku)
@@ -25,13 +24,21 @@
     to win prizes.
 
     --
-
+    <form>
     Facilities
 
-    Was the porridge
-    Too hot?
-    Too cold?
-    Just right?
+    <fieldset>
+          <legend>Was the porridge</legend>
+          <input type="radio" id="porridge1" name="porridge" value="hot"checked />
+            <label for="porridge1">Too hot?</label>
+          <input
+            type="radio" id="porridge2" name="porridge" value="cold" />
+            <label for="porridge2">Too cold?</label>
+          <input
+            type="radio" id="porridge3" name="porridge" value="right" />
+            <label for="porridge3">Just right?</label>
+        </fieldset>
+
 
     Were the beds
     Too hard?
@@ -80,5 +87,7 @@
     Submit
 
     --
+    </form>
+
   </body>
 </html>
