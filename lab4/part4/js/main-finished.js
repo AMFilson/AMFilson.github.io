@@ -13,6 +13,10 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+/* constant for the ball counter */
+const ballCount = document.querySelector("p")
+let counter = 0
+
 // function to generate random number
 
 function random(min, max) {
