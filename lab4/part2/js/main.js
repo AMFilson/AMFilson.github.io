@@ -16,5 +16,17 @@ const images = [{filename: "pic1.jpg", alt: "Closeup of a human eye"},
     {filename: "pic3.jpg", alt: "Purple and white pansies"},
     {filename: "pic4.jpg", alt: "Section of wall from a pharaoh's tomb"},
     {filename: "pic5.jpg", alt: "Large moth on a leaf"}
+]
 
-]'
+const baseURL = "./images/";
+
+for (const eachImage of images) {
+
+    const newImageElement = document.createElement("img")
+    newImageElement.src = baseURL + image.filename
+    newImageElement.alt = image.alt
+    newImageElement.tabIndex= "0"
+
+    thumbBar.appendChild(newImageElement)
+    
+}
