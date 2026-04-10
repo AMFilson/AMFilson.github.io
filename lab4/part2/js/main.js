@@ -27,6 +27,7 @@ for (const eachImage of images) {
     newImageElement.alt = eachImage.alt
     newImageElement.tabIndex= "0"
 
+    /* This is same as mdn but doesnt display properly for some reason */
     thumbBar.appendChild(newImageElement)
     newImageElement.addEventListener("click", updateDisplayedImage)
 }
