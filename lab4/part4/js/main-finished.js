@@ -67,6 +67,25 @@ class EvilCircle extends Shape{
     ctx.lineWidth = 3
   }
 
+  checkBounds() {
+    if (this.x + this.size >= width) {
+      this.x -= this.size;
+    }
+
+    if (this.x - this.size <= 0) {
+      this.x  += this.size;
+    }
+
+    if (this.y + this.size >= height) {
+      this.y -= this.size;
+    }
+
+    if (this.y - this.size <= 0) {
+      this.y += this.size;
+    }
+
+  }
+
 }
 
 class Ball extends Shape {
