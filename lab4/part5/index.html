@@ -84,35 +84,44 @@
 
     About your hosts
 
-    Who's your favorite bear?
-    Papa bear
-    Mama bear
-    Junior
-    Dozer
 
-    Which greeting did you prefer?
-    Wave
-    Friendly greeting
-    Growl
-    Claw marks in the door
+        <label for="favorite">Who's your favorite bear?</label>
+        <select name="favorite" id="favorite">
+          <option value="papa">Papa bear</option>
+          <option value="mama">Mama bear</option>
+          <option value="junior">Junior</option>
+          <option value="dozer">Dozer</option>
+        </select>
+
+        <label for="favorite">Which greeting did you prefer?</label>
+        <select name="favorite" id="favorite">
+          <option value="wave">Wave</option>
+          <option value="friendly">Friendly greeting</option>
+          <option value="growl">Growl</option>
+          <option value="claws">Claw marks in the door</option>
+        </select>
 
     --
 
     Any other feedback?
 
-    Give us your comments
+    <label for="comments">Give us your comments</label>
+    <textarea id="comments" name="comments"></textarea>
 
     --
 
     Your details
 
-    Name
-    Email
-    Phone
+    <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
+    <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+    <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" />
 
     --
 
-    Submit
+    <button>Submit</button>
 
     --
     </form>
