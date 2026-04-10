@@ -175,7 +175,9 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  counter ++
 }
+
 
 const newEvilCircle = new EvilCircle(random(0, width), random(0,height))
 
@@ -193,10 +195,13 @@ function loop() {
     
   }
     newEvilCircle.draw()
-    newEvilCircle.update()
+    newEvilCircle.checkBounds()
     newEvilCircle.collisionDetect()
+
+    ballCount.textContent = `Ball Count: ${counter}`
 
   requestAnimationFrame(loop);
 }
+
 
 loop();
