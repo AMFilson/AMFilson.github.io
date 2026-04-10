@@ -18,15 +18,20 @@ const images = [{filename: "pic1.jpg", alt: "Closeup of a human eye"},
     {filename: "pic5.jpg", alt: "Large moth on a leaf"}
 ]
 
-const baseURL = "./images/";
+const baseURL = "images/";
 
 for (const eachImage of images) {
 
     const newImageElement = document.createElement("img")
-    newImageElement.src = baseURL + image.filename
-    newImageElement.alt = image.alt
+    newImageElement.src = baseURL + eachImage.filename
+    newImageElement.alt = eachImage.alt
     newImageElement.tabIndex= "0"
 
     thumbBar.appendChild(newImageElement)
-    
+    newImageElement.addEventListener("click", updateDisplayedImage)
+}
+
+function updateDisplayedImage() {
+    displayedImage.src = newImageElement.src
+    displayedImage.alt = newImageElement.alt
 }
