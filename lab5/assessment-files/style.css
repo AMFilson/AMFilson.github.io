@@ -21,6 +21,19 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 /* || typography */
 
 h1, h2, h3 {
@@ -218,6 +231,13 @@ audio {
 .show-hide {
   text-align: center;
   width: 150px;
+  cursor: pointer;
+}
+/* adding a focus state here to provide a visual
+as to when this show comments button is actually focused */
+.show-hide:focus {
+  outline: 3px solid #ff80ff;
+  outline-offset: 2px;
 }
 
 .comment-form input, .comment-form label, .show-hide {
