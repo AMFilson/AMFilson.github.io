@@ -1,5 +1,10 @@
 // functionality for showing/hiding the comments section
-
+/* <!--
+    Author: Andrew Filson (Adu Poku)
+    Filename: main,.js
+    Date: April 20th 2026
+    Desc: scripts for index
+    --> */
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
